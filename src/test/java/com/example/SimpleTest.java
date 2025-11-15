@@ -19,6 +19,7 @@ public class SimpleTest {
             Assert.assertTrue(title.toLowerCase().contains("google"));
         } finally {
             driver.quit();
+            System.out.print("Quit");
         }
     }
 	
