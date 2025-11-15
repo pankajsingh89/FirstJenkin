@@ -54,11 +54,7 @@
       <version>5.4.1</version>
     </dependency>
     
-    <dependency>
-    	<groupId>SeleniumComponent</groupId>
-    	<artifactId>SeleniumComponent</artifactId>
-    	<version>0.0.1-SNAPSHOT</version>
-    </dependency>
+    
   </dependencies>
 
   <build>
