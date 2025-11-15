@@ -7,10 +7,7 @@
       <class name="com.example.SimpleTest"/>
     </classes>
   </test>
-  
-  <listeners>
-  <listener class-name="com.example.reporting.TestListener"/>
-</listeners>
+ 
 
 
 </suite>
