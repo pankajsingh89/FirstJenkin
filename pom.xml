@@ -42,14 +42,18 @@
       <artifactId>webdrivermanager</artifactId>
       <version>5.4.1</version>
     </dependency>
-
-    <!-- JUnit 5 -->
-    <dependency>
-      <groupId>org.junit.jupiter</groupId>
-      <artifactId>junit-jupiter</artifactId>
-      <version>${junit.version}</version>
+<dependency>
+      <groupId>org.testng</groupId>
+      <artifactId>testng</artifactId>
+      <version>7.8.0</version>
       <scope>test</scope>
     </dependency>
+    <dependency>
+      <groupId>io.github.bonigarcia</groupId>
+      <artifactId>webdrivermanager</artifactId>
+      <version>5.4.1</version>
+    </dependency>
+    
     <dependency>
     	<groupId>SeleniumComponent</groupId>
     	<artifactId>SeleniumComponent</artifactId>
@@ -95,6 +99,18 @@
           <artifactId>maven-site-plugin</artifactId>
           <version>3.12.1</version>
         </plugin>
+        
+        <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>3.1.2</version>
+        <configuration>
+          <suiteXmlFiles>
+            <suiteXmlFile>testng.xml</suiteXmlFile>
+          </suiteXmlFiles>
+        </configuration>
+      </plugin>
+        
         <plugin>
           <artifactId>maven-project-info-reports-plugin</artifactId>
           <version>3.6.1</version>
